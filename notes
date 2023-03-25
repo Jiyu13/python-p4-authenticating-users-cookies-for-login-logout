@@ -1,0 +1,6 @@
+1. how to stay logging in after refreshing the page
+
+# refresh the page, the state in frontend got reset, so it doesn't know which user it is
+# but backend still knows, so need a way of getting the user data from backend into the state with the page first loads
+# first, need a route to retrieve the user's data from the database using the session hash:
+# then log the user in from the frontend as soon as the application loads:
